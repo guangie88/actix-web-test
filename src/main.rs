@@ -26,7 +26,7 @@ fn json(data: Json<Data>) -> Json<DataResponse> {
     })
 }
 
-fn main() -> Result<(), Box<Error>> {
+fn main() -> Result<(), Box<dyn Error>> {
     server::new(|| {
         App::new()
             .route("/{id}/{name}/index.html", http::Method::GET, index)
