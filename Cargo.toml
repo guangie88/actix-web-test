@@ -1,0 +1,9 @@
+[package]
+name = "actix-web-test"
+version = "0.1.0"
+authors = ["Chen Weiguang <chen.weiguang@gmail.com>"]
+
+[dependencies]
+actix-web = "0.6.15"
+serde_derive = "1.0.70"
+serde = "1.0.70"
